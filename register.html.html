@@ -1,0 +1,46 @@
+<h3>
+    <center>
+    Register The form To Order :<hr>
+    </center><h3>
+    <br>
+    <h>
+    </center>
+            <form id="orderForm" onsubmit="submiOrder(event)">
+                <center>
+    Name :
+    <input type ="text" name="Name"  placeholder="Enter Your Name"><br>
+    Address :
+    <input type="text" name="Name" placeholder="Enter Your Delivery Address"><br>
+    Email :
+    <input type="text" name="Email id" placeholder="@gmail.com"><br>
+    Place :
+    <input type="text" name="Name" placeholder="Enter Your Place"><br>
+    Item Purchased :
+    <input type="text" name="number" placeholder="Enter the no of item purchased"><br>
+    Ph No:
+    <input type="text" name="number" placeholder="Enter The ph no"><br>
+    <br><input type="reset" name="button"> 
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        
+            <p id="confirmationMessage" style="display:none; color: green; font-weight: bold;"></p>
+        
+            <script>
+                function submitOrder(event) {
+                    event.preventDefault();  // Prevent form from submitting normally
+                    document.getElementById("confirmationMessage").textContent = " Your Order placed successfully !";
+                    document.getElementById("confirmationMessage").style.display = "block";
+                }
+            </script><hr>
+            <h1>
+                <center>
+                    Thank You !
+                </center>
+            </h1>
+
+            <a href="file:///C:/Users/VIGNESH%20V/Desktop/SDP%20PROJECT/SDP%20PROJECT%201.html">Home</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+
+            
+    
